@@ -81,7 +81,7 @@ dcl-proc getXmlFileHandle;
   flags = O_WRONLY + O_CREAT + O_TRUNC + O_CCSID +
           O_TEXTDATA + O_TEXT_CREAT;
   mode =  S_IRUSR + S_IWUSR + S_IRGRP;
-  fileHandle = open(%trimr(filePath) : flags : mode : 819 : 0);
+  fileHandle = open(%trimr(filePath) : flags : mode : 1208 : 0);
   if (fileHandle < 0);
     // could not open file handle
     errorPtr = errno();
